@@ -10,7 +10,7 @@ int main(){                 //main function, most important function in a progra
     total = m1 + m2 + m3 + m4 + m5; //calculating total marks
     cout << "Total Marks: " << total << endl; //displaying total marks
     float percent = 0;        //variable to hold percentage, initializing it to 0 to get rid of any junk values
-    percent = (total*100)/500;  //calculating percentage using formaula
+    percent = float(total*100)/500;  //calculating percentage using formaula
     cout << "Percentage is " << percent << "%" << endl; //printing percentage
     return 0;
 }
