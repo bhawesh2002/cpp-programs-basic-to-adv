@@ -8,6 +8,7 @@ int main(){                 //main function, most important function in a progra
     cout << "Please Enter Your Marks(out fo 100): "; //prompting user to enter marks
     cin >> m1 >> m2 >> m3 >> m4 >> m5;           //accepting marks from user
     total = m1 + m2 + m3 + m4 + m5; //calculating total marks
+    cout << "Total Marks: " << total << endl; //displaying total marks
     float percent = 0;        //variable to hold percentage, initializing it to 0 to get rid of any junk values
     percent = (total/500)*100;  //calculating percentage using formaula
     cout << "Percentage is " << percent << "%" << endl; //printing percentage
