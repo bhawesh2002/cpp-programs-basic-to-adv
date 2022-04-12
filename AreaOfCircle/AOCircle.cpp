@@ -1,6 +1,6 @@
 #include <iostream> //preprocessor directive, instructs the preprocessor to include the iostream library
 
-#define PI 3.14; // define PI as 3.14 (PI is a constant, can be used anywhere in the program)
+#define PI 3.1426; // define PI as 3.14 (PI is a constant, can be used anywhere in the program)
 
 using namespace std; // we are using the standard namespace(simply,no need to use std::cout,use cout instead)
 
