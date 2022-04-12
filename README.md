@@ -22,3 +22,8 @@ Here is the ref:- https://www.geeksforgeeks.org/how-to-write-a-pseudo-code/
 **2)AreaOfCircle**
 
 #**Constant Declaration** :- https://www.geeksforgeeks.org/constants-in-c-cpp/
+
+**3)Perimeter Of Triangle**
+
+#**nothing new here.**
+_**The only thing to know in general are some basic formulas and concepts of maths**_
