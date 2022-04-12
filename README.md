@@ -18,3 +18,7 @@ Here is the ref:- https://www.geeksforgeeks.org/how-to-write-a-pseudo-code/
 #**Precedence Of Operators** :- https://en.cppreference.com/w/cpp/language/operator_precedence 
 
 #**Typecasting**  :- https://www.cplusplus.com/doc/oldtutorial/typecasting/
+
+**2)AreaOfCircle**
+
+#**Constant Declaration** :- https://www.geeksforgeeks.org/constants-in-c-cpp/
