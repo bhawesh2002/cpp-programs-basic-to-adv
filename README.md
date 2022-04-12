@@ -26,4 +26,9 @@ Here is the ref:- https://www.geeksforgeeks.org/how-to-write-a-pseudo-code/
 **3)Perimeter Of Triangle**
 
 #**nothing new here.**
+
 _**The only thing to know in general are some basic formulas and concepts of maths**_
+
+**5)Numerator and Denomenator**
+
+**NOTE:-** one of the most important thing while writing code for the given question is _following the question and producing the output accordingly_.
