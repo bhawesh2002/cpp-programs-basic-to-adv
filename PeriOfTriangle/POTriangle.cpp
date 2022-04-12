@@ -6,11 +6,11 @@ int main()
 { // main function, most important function in a program
     float length,breadth,height; // declaring variables for storing length,breadth and height of triangle
     cout << "Enter the dimensions of the triangle: " << endl; // prompting user to enter length
-    cout << "length";
+    cout << "length: ";
     cin >> length;
-    cout << "breadth";
+    cout << "breadth: ";
     cin >> breadth;
-    cout << "height";
+    cout << "height: ";
     cin >> height;
     float perimeter = length + breadth + height; // calculating perimeter using formaula
     cout << "The perimeter of the triangle is: " << perimeter << endl; // printing perimeter
