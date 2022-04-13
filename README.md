@@ -1,5 +1,5 @@
 # cpp-programs-basic-to-adv
-A repo containing all the programs I wrote while learning C++ yet again
+A repo containing all the programs I wrote while learning C++, _**yet again**_
 
 (Someting very important in writing program in any language is **PSEUDO CODE**
 
@@ -18,3 +18,17 @@ Here is the ref:- https://www.geeksforgeeks.org/how-to-write-a-pseudo-code/
 #**Precedence Of Operators** :- https://en.cppreference.com/w/cpp/language/operator_precedence 
 
 #**Typecasting**  :- https://www.cplusplus.com/doc/oldtutorial/typecasting/
+
+**2)AreaOfCircle**
+
+#**Constant Declaration** :- https://www.geeksforgeeks.org/constants-in-c-cpp/
+
+**3)Perimeter Of Triangle**
+
+#**nothing new here.**
+
+_**The only thing to know in general are some basic formulas and concepts of maths**_
+
+**5)Numerator and Denomenator**
+
+**NOTE:-** one of the most important thing while writing code for the given question is _following the question and producing the output accordingly_.
