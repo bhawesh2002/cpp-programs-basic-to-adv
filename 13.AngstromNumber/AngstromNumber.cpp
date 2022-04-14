@@ -11,12 +11,11 @@ int main()
     cout << "enter a number: ";
     cin >> num;
     entered_num = num;
-    while (num != 0)
+    while (num != 0)   //while loop to find the number of digits in the number
     {
-        temp = num % 10; // to get the last digit of the number
         num = num / 10;  // to remove the last digit of the number
-        n++;
+        n++;        
     }
-    cout << "n=" << n;
+    cout << n;
     return 0;
 }
