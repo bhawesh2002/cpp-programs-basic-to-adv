@@ -1,6 +1,5 @@
-/*Write a program to find the sum of the series 1 + 3 + 5 + 7……n terms. The value of ‘n’
-is given by the user during program execution?*/
-
+/*Write a program to find the sum of the series 13 + 33 + 53 + 73 + … n terms. Assume
+that the value of n is given by the user during program execution?*/
 #include <iostream>
 
 using namespace std;
