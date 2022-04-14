@@ -8,12 +8,13 @@ using namespace std;
 
 int main()
 {
-    int n, i = 1, fact = 1;
+    int n, i = 1;
     float sum = 0;
     cout << "Enter the value of n: ";
     cin >> n;
     while (n * 2 >= i)
     {
+        int fact = 1;
         for (int j = 1; j <= i; j++)
         {
             fact *= j;
