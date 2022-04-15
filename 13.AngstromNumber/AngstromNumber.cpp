@@ -18,13 +18,13 @@ int main()
         entered_num = entered_num / 10; // to remove the last digit of the number
         n++;                            // increment the number of digits
     }
-    for (int i = 1; i <= n; i++)
+    for (int i = 1; i <= n; i++) // for loop to fing angstrong number based on the number of digits
     {
         temp = entered_num2 % 10;         // to store the last digit of the number
         entered_num2 = entered_num2 / 10; // to remove the last digit of the number
         sum = sum + pow(temp, n);         // to calculate the sum of the cube of the digits
     }
-    if (sum == num)
+    if (sum == num) // Angstrong number= a number whose sum of individual digits raised to the power of individual digits equal to the number itself
         cout << "The number is an angstrom number";
     else
         cout << "The number is not an angstrom number";
