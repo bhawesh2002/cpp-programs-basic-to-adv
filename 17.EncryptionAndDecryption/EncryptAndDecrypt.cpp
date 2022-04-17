@@ -11,11 +11,13 @@ int main()
     string phrase;
     cout << "Enter phrase to encrypt: ";
     cin >> phrase;
+    string encryptedPhrase = "";
     for (int i = 1; i <= phrase.size(); i++)
     {
-        cout << encrypt(phrase[i - 1]);
+        encryptedPhrase += encrypt(phrase[i - 1]);
     }
-    
+    cout << encryptedPhrase << endl;
+    return 0;
 }
 
 char encrypt(char letter)
