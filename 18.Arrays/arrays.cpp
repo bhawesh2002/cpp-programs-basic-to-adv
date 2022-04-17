@@ -10,5 +10,9 @@ int main()
         cout << "Enter number: ";
         cin >> num[i]; // inputting values into array
     }
+    for (int i = 0; i < 5; i++) // for loop to print values
+    {
+        cout << i+1 << "." << num[i] << endl;
+    }
     return 0;
 }
