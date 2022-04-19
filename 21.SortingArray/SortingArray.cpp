@@ -13,13 +13,10 @@ int main()
     }
     for (int i = 0; i < sizeof(numbers) / sizeof(int); i++)
     {
-        for (int j = 1; j < sizeof(numbers) / sizeof(int); j++)
-        {
-            if(numbers[j] > numbers[i]){
-                int temp = numbers[j];
-                numbers[j] = numbers[i];
-                numbers[i] = temp;
-            }
+        if(numbers[i] > numbers[i+1]){
+            int temp = numbers[i];
+            numbers[i] = numbers[i+1];
+            numbers[i+1] = temp; 
         }
     }
     cout << "The sorted array is" << endl;
