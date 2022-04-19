@@ -41,12 +41,17 @@ int main()
         // sort array in descending order
         for (int i = 0; i < sizeof(numbers) / sizeof(int); i++)
         {
-            if (numbers[i] < numbers[i + 1])
+            for (int j = i +1 ; i < sizeof(numbers)/sizeof(int); j++)
             {
-                int temp = numbers[i];
-                numbers[i] = numbers[i + 1];
-                numbers[i + 1] = temp;
+                if (numbers[j] > numbers[i])
+                {
+                    int temp = numbers[i];
+                    numbers[i] = numbers[j];
+                    temp = numbers[j];
+                }
+                
             }
+            
         }
     }
     break;
