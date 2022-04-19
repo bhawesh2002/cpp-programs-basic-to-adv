@@ -2,6 +2,17 @@
 
 using namespace std;
 
+void printArray(int arr[5])
+{
+
+    cout << "The sorted array is" << endl;
+    for (int i = 0; i < 5; i++)
+    {
+
+        cout << i + 1 << "." << arr[i] << endl;
+    }
+}
+
 int main()
 {
     int numbers[5] = {0};
@@ -12,7 +23,11 @@ int main()
         cin >> numbers[i];
     }
     int choice;
-    while (choice != 3)
+    cout << "1.Sort in Ascending" << endl;
+    cout << "2.Sort in Descending" << endl;
+    cout << "3. I QUIT" << endl;
+    cout << "Enter your choice" << endl;
+    cin >> choice;
     {
         switch (choice)
         {
@@ -31,7 +46,7 @@ int main()
                     }
                 }
             }
-            goto printArray;
+            printArray(numbers);
         }
         break;
         case 2:
@@ -49,8 +64,14 @@ int main()
                     }
                 }
             }
+            printArray(numbers);
         }
         break;
+        case 3:
+        {
+            cout << "Thank You" << endl;
+            exit(0);
+        }
         default:
             cout << "INVALID CHOICE" << endl;
             cout << "1.Sort in Ascending" << endl;
@@ -62,13 +83,4 @@ int main()
         }
     }
     return 0;
-printArray:
-{
-    cout << "The sorted array is" << endl;
-    for (int i = 0; i < sizeof(numbers) / sizeof(int); i++)
-    {
-
-        cout << i + 1 << "." << numbers[i] << endl;
-    }
-}
 }
