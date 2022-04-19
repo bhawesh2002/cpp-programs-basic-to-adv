@@ -12,52 +12,56 @@ int main()
         cin >> numbers[i];
     }
     int choice;
-    cout << "1.Sort in Ascending" << endl;
-    cout << "2.Sort in Descending" << endl;
-    cout << "3. I QUIT!" << endl;
-    cout << "Enter your choice" << endl;
-    cin >> choice;
-    switch (choice)
+    while (choice != 3)
     {
-    case 1:
-    {
-        // sort array in ascending order
-        for (int i = 0; i < sizeof(numbers) / sizeof(int); i++)
+        switch (choice)
         {
-            for (int j = i + 1; j < sizeof(numbers) / sizeof(int); j++)
+        case 1:
+        {
+            // sort array in ascending order
+            for (int i = 0; i < sizeof(numbers) / sizeof(int); i++)
             {
-                if (numbers[i] > numbers[j])
+                for (int j = i + 1; j < sizeof(numbers) / sizeof(int); j++)
                 {
-                    int temp = numbers[i];
-                    numbers[i] = numbers[j];
-                    numbers[j] = temp;
+                    if (numbers[i] > numbers[j])
+                    {
+                        int temp = numbers[i];
+                        numbers[i] = numbers[j];
+                        numbers[j] = temp;
+                    }
                 }
             }
+            goto printArray;
         }
-        goto printArray;
-    }
-    break;
-    case 2:
-    {
-        // sort array in descending order
-        for (int k = 0; k < sizeof(numbers) / sizeof(int); k++)
-        {
-            for (int l = k + 1; l < sizeof(numbers) / sizeof(int); l++)
-            {
-                if (numbers[k] < numbers[l])
-                {
-                    int temp = numbers[k];
-                    numbers[k] = numbers[l];
-                    numbers[l] = temp;
-                }
-            }
-        }
-    }
-    break;
-    default:
-        cout << "INVALID CHOICE" << endl;
         break;
+        case 2:
+        {
+            // sort array in descending order
+            for (int k = 0; k < sizeof(numbers) / sizeof(int); k++)
+            {
+                for (int l = k + 1; l < sizeof(numbers) / sizeof(int); l++)
+                {
+                    if (numbers[k] < numbers[l])
+                    {
+                        int temp = numbers[k];
+                        numbers[k] = numbers[l];
+                        numbers[l] = temp;
+                    }
+                }
+            }
+        }
+        break;
+        default:
+            cout << "INVALID CHOICE" << endl;
+            cout << "1.Sort in Ascending" << endl;
+            cout << "2.Sort in Descending" << endl;
+            cout << "3. I QUIT!" << endl;
+            cout << "Enter your choice" << endl;
+            cin >> choice;
+            break;
+        }
     }
+    return 0;
 printArray:
 {
     cout << "The sorted array is" << endl;
@@ -67,5 +71,4 @@ printArray:
         cout << i + 1 << "." << numbers[i] << endl;
     }
 }
-    return 0;
 }
