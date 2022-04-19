@@ -23,14 +23,17 @@ int main()
         // sort array in ascending order
         for (int i = 0; i < sizeof(numbers) / sizeof(int); i++)
         {
-            if (numbers[i] > numbers[i + 1])
+            for (int j = i + 1; j < sizeof(numbers) / sizeof(int); j++)
             {
-                int temp = numbers[i];
-                numbers[i] = numbers[i + 1];
-                numbers[i + 1] = temp;
-                cout << numbers[i] << " ";
+                if (numbers[i] > numbers[j])
+                {
+                    int temp = numbers[i];
+                    numbers[i] = numbers[j];
+                    numbers[j] = temp;
+                }
             }
         }
+        goto printArray;
     }
     break;
     case 2:
@@ -50,7 +53,7 @@ int main()
     default:
         break;
     }
-/*printArray:
+printArray:
 {
     cout << "The sorted array is" << endl;
     for (int i = 0; i < sizeof(numbers) / sizeof(int); i++)
@@ -58,6 +61,6 @@ int main()
 
         cout << i + 1 << "." << numbers[i] << endl;
     }
-}*/
+}
     return 0;
 }
