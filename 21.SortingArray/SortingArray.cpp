@@ -6,23 +6,51 @@ int main()
 {
     int numbers[5] = {0};
     cout << "Fill the array with 5 numbers" << endl;
-    for (int i = 0; i < sizeof(numbers) / sizeof(int); i++) //loop to fill the array
+    for (int i = 0; i < sizeof(numbers) / sizeof(int); i++) // loop to fill the array
     {
         cout << i + 1 << ".";
         cin >> numbers[i];
     }
-    //sort array in ascending order
-    for (int i = 0; i < sizeof(numbers) / sizeof(int); i++)
+    int choice;
+    cout << "1.Sort in Ascending" << endl;
+    cout << "2.Sort in Descending" << endl;
+    cout << "Enter your choice" << endl;
+    cin >> choice;
+    switch (choice)
     {
-        if (numbers[i] > numbers[i + 1])
+    case 1:
+    {
+        // sort array in ascending order
+        for (int i = 0; i < sizeof(numbers) / sizeof(int); i++)
         {
-            int temp = numbers[i];
-            numbers[i] = numbers[i + 1];
-            numbers[i + 1] = temp;
+            if (numbers[i] > numbers[i + 1])
+            {
+                int temp = numbers[i];
+                numbers[i] = numbers[i + 1];
+                numbers[i + 1] = temp;
+                cout << numbers[i] << " ";
+            }
         }
     }
-
-printArray:
+    break;
+    case 2:
+    {
+        // sort array in descending order
+        for (int i = 0; i < sizeof(numbers) / sizeof(int); i++)
+        {
+            if (numbers[i] < numbers[i + 1])
+            {
+                int temp = numbers[i];
+                numbers[i] = numbers[i + 1];
+                numbers[i + 1] = temp;
+            }
+        }
+    }
+    break;
+    default:
+        break;
+    }
+/*printArray:
 {
     cout << "The sorted array is" << endl;
     for (int i = 0; i < sizeof(numbers) / sizeof(int); i++)
@@ -30,6 +58,6 @@ printArray:
 
         cout << i + 1 << "." << numbers[i] << endl;
     }
-}
+}*/
     return 0;
 }
