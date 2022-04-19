@@ -39,23 +39,22 @@ int main()
     case 2:
     {
         // sort array in descending order
-        for (int i = 0; i < sizeof(numbers) / sizeof(int); i++)
+        for (int k = 0; k < sizeof(numbers) / sizeof(int); k++)
         {
-            for (int j = i +1 ; i < sizeof(numbers)/sizeof(int); j++)
+            for (int l = k + 1; l < sizeof(numbers) / sizeof(int); l++)
             {
-                if (numbers[j] > numbers[i])
+                if (numbers[k] < numbers[l])
                 {
-                    int temp = numbers[i];
-                    numbers[i] = numbers[j];
-                    temp = numbers[j];
+                    int temp = numbers[k];
+                    numbers[k] = numbers[l];
+                    numbers[l] = temp;
                 }
-                
             }
-            
         }
     }
     break;
     default:
+        cout << "INVALID CHOICE" << endl;
         break;
     }
 printArray:
