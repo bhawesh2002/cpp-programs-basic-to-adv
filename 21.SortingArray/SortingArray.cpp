@@ -14,6 +14,7 @@ int main()
     int choice;
     cout << "1.Sort in Ascending" << endl;
     cout << "2.Sort in Descending" << endl;
+    cout << "3. I QUIT!" << endl;
     cout << "Enter your choice" << endl;
     cin >> choice;
     switch (choice)
