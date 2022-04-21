@@ -32,3 +32,8 @@ _**The only thing to know in general are some basic formulas and concepts of mat
 **5)Numerator and Denomenator**
 
 **NOTE:-** one of the most important thing while writing code for the given question is _following the question and producing the output accordingly_.
+
+**6)Sum Of Odds**
+
+Nothing new here, but do note the condition supplied to **while loop**. We need to claculate the sum of cube of odd numbers upto user entered **n** terms.
+In the number series half are even and half are odd, so if the user enters **n = 5** then **n*2=10** i.e 10 numbers from 1 to 10, inside the loop we add 2 to i after each cycle till **i <= n*2**, this allows us to use all odd numbers from 1 to 10 i.e 5 odd numbers(1,2,3,4,5).
