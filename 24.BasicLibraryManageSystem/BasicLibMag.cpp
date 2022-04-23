@@ -12,7 +12,7 @@ using namespace std;
 
 int main()
 {
-    library book[5];
+    library book[5] = {0};
     int choice; // for user choice
     do
     {
