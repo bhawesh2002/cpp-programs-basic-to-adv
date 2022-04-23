@@ -76,7 +76,28 @@ int main()
         }
     }
     break;
-    
+    case 3: //search for a book
+    {
+        cout << "Enter the name of book: ";
+        char book_name[25];
+        cin.getline(book_name, 25);
+        for (int i = 0; i <= 5; i++)
+        {
+            if (strcmp(book[i].book_name, book_name) == 0)
+            {
+                cout << "Book found" << endl;
+                cout << "Book name: " << book[i].book_name << endl;
+                cout << "Author: " << book[i].author << endl;
+                cout << "Shelf number: " << book[i].shelf_number << endl;
+                cout << "Price: " << book[i].price << endl;
+                break;
+            }
+            else
+            {
+                cout << "Book not found" << endl;
+            }
+        }
+    }
 
     default:
         break;
