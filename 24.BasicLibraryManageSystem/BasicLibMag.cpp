@@ -1,6 +1,4 @@
 #include <iostream>
-#include <string> //for strcmp(): function used to compare strings
-using namespace std;
 
 struct library
 {
@@ -10,10 +8,12 @@ struct library
     int price;
 };
 
+using namespace std;
+
 int main()
 {
     library book[5];
-    int choice; //for user choice
+    int choice; // for user choice
     do
     {
         cout << "BASIC LIBRAY MANAGEMENT SYSTEM" << endl;
@@ -120,10 +120,10 @@ int main()
         default:
         {
             cout << "Invalid Choice" << endl;
-            break;
         }
+        break;
         }
     } while (choice != 5);
     cout << "*******Thank You for Visiting*******" << endl;
-    return 0;
+
 }
