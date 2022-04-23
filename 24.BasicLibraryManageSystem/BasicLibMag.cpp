@@ -47,12 +47,12 @@ int main()
                 cout << "Wanna Add More Books?(y/n): ";
                 char ch;
                 cin >> ch;
-                a++;  //increment the index of book
+                a++; // increment the index of book
                 if (ch == 'y')
                 {
                     cout << "Enter the details of book you wnat to add: " << endl;
                 }
-                else if(a == 4)
+                else if (a == 4)
                 {
                     cout << "You can't add more books" << endl;
                     cout << "Please remove some books" << endl;
@@ -132,7 +132,10 @@ int main()
         break;
         default:
         {
-            cout << "Invalid Choice" << endl;
+            if (choice > 5)
+            {
+                cout << "Invalid Choice" << endl;
+            }
         }
         break;
         }
