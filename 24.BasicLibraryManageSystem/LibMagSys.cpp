@@ -15,7 +15,7 @@ int main()
     library book[5];
     cout << "BASIC LIBRAY MANAGEMENT SYSTEM" << endl;
     cout << "==============================" << endl;
-    cout << "1. Add a new book(You can add upto 5 books)" << endl;
+    cout << "1. Add a new book(You can add upto " << sizeof(book) / sizeof(library) << " books)" << endl;
     cout << "2. Remove a book" << endl;
     cout << "3. Search for a book" << endl;
     cout << "4. Display all books" << endl;
@@ -55,8 +55,28 @@ int main()
     break;
     case 2:
     {
+        cout << "Enter the name & shelf of book you want to remove" << endl;
+        char book_name[25];
+        int shelf_number;
+        cout << "Enter the name of book: ";
+        cin.getline(book_name, 25);
+        cout << "Enter the shelf number: ";
+        cin >> shelf_number;
+        for (int i = 0; i <= 5; i++)
+        {
+            if (book[i].shelf_number == shelf_number && strcmp(book[i].book_name, book_name) == 0)
+            {
+                cout << "Book removed successfully" << endl;
+                break;
+            }
+            else
+            {
+                cout << "Book not found" << endl;
+            }
+        }
     }
     break;
+    
 
     default:
         break;
