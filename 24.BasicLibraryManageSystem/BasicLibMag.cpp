@@ -78,6 +78,7 @@ int main()
             {
                 if (book[i].shelf_number == shelf_number && strcmp(book[i].book_name, book_name) == 0)
                 {
+                    book[i] = {0}; // set the value of book[i] to {0}
                     cout << "Book removed successfully" << endl;
                     a--; // to remove the book from the array
                     break;
