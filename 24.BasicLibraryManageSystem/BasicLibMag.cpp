@@ -25,31 +25,37 @@ int main()
         cout << "5. Exit" << endl;
         cout << "===============================" << endl;
         cout << "Enter your choice: ";
-        int i = 1; // to store the number of books added
+        int a = 0; // acces to the array index of book
         cin >> choice;
         switch (choice)
         {
         case 1:
         {
             cout << "Enter the details of book you wnat to add: " << endl;
-            while (i <= 5)
+            while (a < 5)
             {
                 cout << "Book name: ";
                 cin.clear();
                 cin.ignore();
-                cin.getline(book[i].book_name, 25);
+                cin.getline(book[a].book_name, 25);
                 cout << "Author: ";
-                cin.getline(book[i].author, 25);
+                cin.getline(book[a].author, 25);
                 cout << "Shelf number: ";
-                cin >> book[i].shelf_number;
+                cin >> book[a].shelf_number;
                 cout << "Price: ";
-                cin >> book[i].price;
+                cin >> book[a].price;
                 cout << "Wanna Add More Books?(y/n): ";
                 char ch;
                 cin >> ch;
+                a++;  //increment the index of book
                 if (ch == 'y')
                 {
                     cout << "Enter the details of book you wnat to add: " << endl;
+                }
+                else if(a == 4)
+                {
+                    cout << "You can't add more books" << endl;
+                    cout << "Please remove some books" << endl;
                 }
                 else
                 {
@@ -73,7 +79,7 @@ int main()
                 if (book[i].shelf_number == shelf_number && strcmp(book[i].book_name, book_name) == 0)
                 {
                     cout << "Book removed successfully" << endl;
-                    i--; // to remove the book from the array
+                    a--; // to remove the book from the array
                     break;
                 }
                 else
