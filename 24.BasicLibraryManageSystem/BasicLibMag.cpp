@@ -113,9 +113,9 @@ int main()
         case 4:
         {
             cout << "====Displaying All Books====" << endl;
-            for (int i = 0; i <= 5; i++)
+            for (int i = 1; i <= 5; i++)
             {
-                cout << "Book No: " << i + 1 << endl;
+                cout << "Book No: " << i << endl;
                 cout << "Book name: " << book[i].book_name << endl;
                 cout << "Author: " << book[i].author << endl;
                 cout << "Shelf number: " << book[i].shelf_number << endl;
