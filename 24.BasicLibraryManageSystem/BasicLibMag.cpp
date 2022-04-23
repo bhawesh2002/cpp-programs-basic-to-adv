@@ -68,7 +68,7 @@ int main()
             cin.getline(book_name, 25);
             cout << "Enter the shelf number: ";
             cin >> shelf_number;
-            for (int i = 0; i <= 5; i++)
+            for (int i = 0; i < 5; i++)
             {
                 if (book[i].shelf_number == shelf_number && strcmp(book[i].book_name, book_name) == 0)
                 {
@@ -91,7 +91,7 @@ int main()
             cin.clear();
             cin.ignore();
             cin.getline(book_name, 25);
-            for (int i = 0; i <= 5; i++)
+            for (int i = 0; i < 5; i++)
             {
                 if (strcmp(book[i].book_name, book_name) == 0)
                 {
