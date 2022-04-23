@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include <cstring>
 struct library
 {
     char book_name[25];
@@ -35,6 +35,8 @@ int main()
             while (i <= 5)
             {
                 cout << "Book name: ";
+                cin.clear();
+                cin.ignore();
                 cin.getline(book[i].book_name, 25);
                 cout << "Author: ";
                 cin.getline(book[i].author, 25);
@@ -62,6 +64,7 @@ int main()
             char book_name[25];
             int shelf_number;
             cout << "Enter the name of book: ";
+            cin.ignore();
             cin.getline(book_name, 25);
             cout << "Enter the shelf number: ";
             cin >> shelf_number;
@@ -76,6 +79,7 @@ int main()
                 else
                 {
                     cout << "Book not found" << endl;
+                    break;
                 }
             }
         }
@@ -84,6 +88,8 @@ int main()
         {
             cout << "Enter the name of book: ";
             char book_name[25];
+            cin.clear();
+            cin.ignore();
             cin.getline(book_name, 25);
             for (int i = 0; i <= 5; i++)
             {
@@ -99,6 +105,7 @@ int main()
                 else
                 {
                     cout << "Book not found" << endl;
+                    break;
                 }
             }
         }
@@ -125,5 +132,4 @@ int main()
         }
     } while (choice != 5);
     cout << "*******Thank You for Visiting*******" << endl;
-
 }
