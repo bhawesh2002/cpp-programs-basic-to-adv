@@ -23,13 +23,14 @@ int main()
     cout << "===============================" << endl;
     cout << "Enter your choice: ";
     int choice;
+    int i = 1; // to store the number of books added
     cin >> choice;
     switch (choice)
     {
     case 1:
     {
         cout << "Enter the details of book you wnat to add: " << endl;
-        for (int i = 0; i <= 5; i++)
+        while (i <= 5)
         {
             cout << "Book name: ";
             cin.getline(book[i].book_name, 25);
@@ -67,6 +68,7 @@ int main()
             if (book[i].shelf_number == shelf_number && strcmp(book[i].book_name, book_name) == 0)
             {
                 cout << "Book removed successfully" << endl;
+                i--; // to remove the book from the array
                 break;
             }
             else
@@ -76,7 +78,7 @@ int main()
         }
     }
     break;
-    case 3: //search for a book
+    case 3: // search for a book
     {
         cout << "Enter the name of book: ";
         char book_name[25];
@@ -98,7 +100,20 @@ int main()
             }
         }
     }
-
+    break;
+    case 4:
+    {
+        cout << "====Displaying All Books====" << endl;
+        for (int i = 0; i <= 5; i++)
+        {
+            cout << "Book No: " << i + 1 << endl;
+            cout << "Book name: " << book[i].book_name << endl;
+            cout << "Author: " << book[i].author << endl;
+            cout << "Shelf number: " << book[i].shelf_number << endl;
+            cout << "Price: " << book[i].price << endl;
+            cout << "============================" << endl;
+        }
+    }
     default:
         break;
     }
