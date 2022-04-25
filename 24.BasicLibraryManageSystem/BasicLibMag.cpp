@@ -14,6 +14,7 @@ int main()
 {
     library book[5] = {0};
     int choice; // for user choice
+    int a = 0; // acces to the array index of book
     do
     {
         cout << "BASIC LIBRAY MANAGEMENT SYSTEM" << endl;
@@ -25,7 +26,6 @@ int main()
         cout << "5. Exit" << endl;
         cout << "===============================" << endl;
         cout << "Enter your choice: ";
-        int a = 0; // acces to the array index of book
         cin >> choice;
         switch (choice)
         {
