@@ -32,21 +32,19 @@ int main()
         case 1:
         {
             cout << "Enter the details of book you wnat to add: " << endl;
-            for (int index = 0; index < 5;)
+            while (a <= 5)
             {
-                if (book[index].book_name == 0)
-                {
                     cout << "Book name: ";
                     cin.clear();
                     cin.ignore();
-                    cin.getline(book[index].book_name, 25);
+                    cin.getline(book[a - 1].book_name, 25);
                     cout << "Author: ";
-                    cin.getline(book[index].author, 25);
+                    cin.getline(book[a - 1].author, 25);
                     cout << "Shelf number: ";
-                    cin >> book[index].shelf_number;
+                    cin >> book[a - 1].shelf_number;
                     cout << "Price: ";
-                    cin >> book[index].price;
-                    index++;
+                    cin >> book[a - 1].price;
+                    a--;
                     cout << "Wanna Add More Books?(y/n): ";
                     char ch;
                     cin >> ch;
@@ -54,7 +52,7 @@ int main()
                     {
                         cout << "Enter the details of book you wnat to add: " << endl;
                     }
-                    else if (a == 4)
+                    else if (a == 0)
                     {
                         cout << "You can't add more books" << endl;
                         cout << "Please remove some books" << endl;
@@ -63,7 +61,7 @@ int main()
                     {
                         break;
                     }
-                }
+                
             }
         }
         break;
