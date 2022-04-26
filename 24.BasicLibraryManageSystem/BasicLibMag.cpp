@@ -14,7 +14,7 @@ int main()
 {
     library book[5] = {0};
     int choice; // for user choice
-    int a = 0; // acces to the array index of book
+    int a = 5;  // total no bo books in library
     do
     {
         cout << "BASIC LIBRAY MANAGEMENT SYSTEM" << endl;
@@ -32,34 +32,37 @@ int main()
         case 1:
         {
             cout << "Enter the details of book you wnat to add: " << endl;
-            while (a < 5)
+            for (int index = 0; index < 5;)
             {
-                cout << "Book name: ";
-                cin.clear();
-                cin.ignore();
-                cin.getline(book[a].book_name, 25);
-                cout << "Author: ";
-                cin.getline(book[a].author, 25);
-                cout << "Shelf number: ";
-                cin >> book[a].shelf_number;
-                cout << "Price: ";
-                cin >> book[a].price;
-                cout << "Wanna Add More Books?(y/n): ";
-                char ch;
-                cin >> ch;
-                a++; // increment the index of book
-                if (ch == 'y')
+                if (book[index].book_name == 0)
                 {
-                    cout << "Enter the details of book you wnat to add: " << endl;
-                }
-                else if (a == 4)
-                {
-                    cout << "You can't add more books" << endl;
-                    cout << "Please remove some books" << endl;
-                }
-                else
-                {
-                    break;
+                    cout << "Book name: ";
+                    cin.clear();
+                    cin.ignore();
+                    cin.getline(book[index].book_name, 25);
+                    cout << "Author: ";
+                    cin.getline(book[index].author, 25);
+                    cout << "Shelf number: ";
+                    cin >> book[index].shelf_number;
+                    cout << "Price: ";
+                    cin >> book[index].price;
+                    index++;
+                    cout << "Wanna Add More Books?(y/n): ";
+                    char ch;
+                    cin >> ch;
+                    if (ch == 'y')
+                    {
+                        cout << "Enter the details of book you wnat to add: " << endl;
+                    }
+                    else if (a == 4)
+                    {
+                        cout << "You can't add more books" << endl;
+                        cout << "Please remove some books" << endl;
+                    }
+                    else
+                    {
+                        break;
+                    }
                 }
             }
         }
