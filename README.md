@@ -43,3 +43,5 @@ In the number series half are even and half are odd, so if the user enters **n =
 Nothing much here. We just need to claculate the factorial of  numbers in denominator
 
 **8)User Operator**
+
+A new topic  **switch case** :- https://www.w3schools.com/cpp/cpp_switch.asp
