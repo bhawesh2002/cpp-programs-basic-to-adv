@@ -32,36 +32,31 @@ int main()
         case 1:
         {
             cout << "Enter the details of book you wnat to add: " << endl;
+            int i = 0;
             while (a <= 5)
             {
-                    cout << "Book name: ";
-                    cin.clear();
-                    cin.ignore();
-                    cin.getline(book[a - 1].book_name, 25);
-                    cout << "Author: ";
-                    cin.getline(book[a - 1].author, 25);
-                    cout << "Shelf number: ";
-                    cin >> book[a - 1].shelf_number;
-                    cout << "Price: ";
-                    cin >> book[a - 1].price;
+                if (book[i].shelf_number != 0)
+                {
+                    cout << "Enter the name of book: ";
+                    cin >> book[i].book_name;
+                    cout << "Enter the author of book: ";
+                    cin >> book[i].author;
+                    cout << "Enter the shelf number of book: ";
+                    cin >> book[i].shelf_number;
+                    cout << "Enter the price of book: ";
+                    cin >> book[i].price;
+                    i++;
                     a--;
-                    cout << "Wanna Add More Books?(y/n): ";
-                    char ch;
-                    cin >> ch;
-                    if (ch == 'y')
-                    {
-                        cout << "Enter the details of book you wnat to add: " << endl;
-                    }
-                    else if (a == 0)
-                    {
-                        cout << "You can't add more books" << endl;
-                        cout << "Please remove some books" << endl;
-                    }
-                    else
-                    {
-                        break;
-                    }
-                
+                }
+                else if (book[i].shelf_number == 0)
+                {
+                    i++;
+                }
+                else if (i == 5)
+                {
+                    cout << "Sorry, you can't add more books" << endl;
+                    break;
+                }
             }
         }
         break;
