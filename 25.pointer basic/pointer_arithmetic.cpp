@@ -22,4 +22,8 @@ int main()
     cout << "Address of ptr on assigning it x + 3 = " << ptr << endl;
     *ptr = 40;
     cout << "value of ptr pointing to x[3] = " << *ptr << endl;
+    ptr = x;
+    *(ptr + 4) = 50;
+    cout << "Address of ptr = " << ptr;
+    cout << "value of ptr pointing to x[4] = " << *(ptr + 4) << endl;
 }
