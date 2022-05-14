@@ -14,4 +14,6 @@ int main()
     cout << "Address of ptr onn incrementation = " << ptr << endl;
     *ptr = 20;
     cout << "value of ptr pointing to x[1] = " << *ptr << endl;
+    ptr = &x[2];
+    cout << "Address of ptr pointing  to x[2] = " << ptr << endl;
 }
