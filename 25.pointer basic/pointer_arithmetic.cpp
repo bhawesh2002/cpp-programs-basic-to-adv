@@ -31,4 +31,9 @@ int main() // main function
     *(ptr + 4) = 50;                                                  // directly assifn ptr address of (x + 4) and assign it a value
     cout << "Address of ptr = " << ptr;                               // print the adress ptr points to
     cout << "value of ptr pointing to x[4] = " << *(ptr + 4) << endl; // print the value stored in *(ptr + 4)
+
+    for (int i = 0; i < sizeof(x) / sizeof(int); i++) // print x
+    {
+        cout << "x[" << i << "] = " << x[i] << endl;
+    }
 }
