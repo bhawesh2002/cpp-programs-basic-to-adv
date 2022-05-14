@@ -16,4 +16,6 @@ int main()
     cout << "value of ptr pointing to x[1] = " << *ptr << endl;
     ptr = &x[2];
     cout << "Address of ptr pointing  to x[2] = " << ptr << endl;
+    *ptr = 30;
+    cout << "value of ptr pointing to x[2] = " << *ptr << endl;
 }
