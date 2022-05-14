@@ -18,4 +18,8 @@ int main()
     cout << "Address of ptr pointing  to x[2] = " << ptr << endl;
     *ptr = 30;
     cout << "value of ptr pointing to x[2] = " << *ptr << endl;
+    ptr = x + 3;
+    cout << "Address of ptr on assigning it x + 3 = " << ptr << endl;
+    *ptr = 40;
+    cout << "value of ptr pointing to x[3] = " << *ptr << endl;
 }
