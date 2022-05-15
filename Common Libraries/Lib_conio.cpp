@@ -1,3 +1,5 @@
+// The code demonstrates use of most commonly used functions provided by the conio.h library.
+
 #include <iostream>
 #include <conio.h> //conio stands for console input/output
 
