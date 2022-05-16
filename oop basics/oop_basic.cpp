@@ -12,7 +12,8 @@ public:            // public members
     { // function to get data. All private data members of the class are accessible only to member functions of the class
         // In thiis case getdata() function
         cout << "Enter name: "; // prompt
-        cin >> name;            // get name
+        cin.getline(name, 30);  // get name
+        cin.clear();
         cout << "Enter roll: "; // prompt
         cin >> roll;            // get roll
     }
