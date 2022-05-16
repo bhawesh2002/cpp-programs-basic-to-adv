@@ -27,7 +27,7 @@ public:
     int calc_fuel()
     {
         if (distance > 1000)
-            return (distance / 1000) * (distance / 2);
+            return (distance / 1000) * (distance / 200);
         else
             return 100;
     }
