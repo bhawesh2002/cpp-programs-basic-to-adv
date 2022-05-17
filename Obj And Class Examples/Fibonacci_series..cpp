@@ -12,7 +12,7 @@ class series
     int sum;
 
 public:
-    series()
+    series() // point to remember : Constructor dosent have a data dype
     {
         a = 0;
         b = 1;
