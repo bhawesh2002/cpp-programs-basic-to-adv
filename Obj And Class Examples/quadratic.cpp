@@ -30,20 +30,21 @@ public:
     }
     void roots()
     {
-        if (b * b - 4 * a * constant < 0)
-            quad = "The equation has no real roots";
-        else if (b * b - 4 * a * constant == 0)
+        if ((b * b) - (4 * a * constant) < 0)
+            cout << "The equation has no real roots" << endl;
+        else if ((b * b) - (4 * a * constant) == 0)
         {
             quad = "The equation has one real root";
-            r1 = -b + sqrt(b * b - 4 * a * constant) / (2 * a);
-            r2 = -b - sqrt(b * b - 4 * a * constant) / (2 * a);
-            show_roots();
+            r1 = -b + sqrt((b * b) - (4 * a * constant)) / (2 * a);
+            r2 = -b - sqrt((b * b) - (4 * a * constant)) / (2 * a);
+            cout << "r1: " << r1 << endl;
+            cout << "r2: " << r2 << endl;
         }
         else
         {
             quad = "The equation has two real roots";
-            r1 = -b + sqrt(b * b - 4 * a * constant) / (2 * a);
-            r2 = -b - sqrt(b * b - 4 * a * constant) / (2 * a);
+            r1 = -b + sqrt((b * b) - (4 * a * constant)) / (2 * a);
+            r2 = -b - sqrt((b * b) - (4 * a * constant)) / (2 * a);
             show_roots();
         }
     }
