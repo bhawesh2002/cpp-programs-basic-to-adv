@@ -40,7 +40,7 @@ public:
             cout << "r1: " << r1 << endl;
             cout << "r2: " << r2 << endl;
         }
-        else
+        else if ((b * b) - (4 * a * constant) > 0)
         {
             quad = "The equation has two real roots";
             r1 = -b + sqrt((b * b) - (4 * a * constant)) / (2 * a);
