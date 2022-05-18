@@ -42,8 +42,8 @@ public:
         else if ((b * b) - (4 * a * constant) > 0)
         {
             cout << "The equation has two real roots" << endl;
-            /*r1 = -b + sqrt((b * b) - (4 * a * constant)) / (2 * a);
-            r2 = -b - sqrt((b * b) - (4 * a * constant)) / (2 * a);*/
+            r1 = -b + sqrt((b * b) - (4 * a * constant)) / (2 * a);
+            r2 = -b - sqrt((b * b) - (4 * a * constant)) / (2 * a);
             show_roots();
         }
     }
