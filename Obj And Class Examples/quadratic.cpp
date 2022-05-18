@@ -1,11 +1,17 @@
 #include <iostream>
-
+#include <cmath>
 using namespace std;
 
 class quadratic
 {
     int a, b, constant;
+    int r1, r2;
     string quad;
+
+    void show_roots()
+    {
+        cout << "The factors are: " << r1 << " and " << r2 << endl;
+    }
 
 public:
     void get_values()
@@ -22,6 +28,25 @@ public:
     {
         cout << "The equation is: " << a << "x^2 + " << b << "x + " << constant << endl;
     }
+    void roots()
+    {
+        if (b * b - 4 * a * constant < 0)
+            quad = "The equation has no real roots";
+        else if (b * b - 4 * a * constant == 0)
+        {
+            quad = "The equation has one real root";
+            r1 = -b + sqrt(b * b - 4 * a * constant) / (2 * a);
+            r2 = -b - sqrt(b * b - 4 * a * constant) / (2 * a);
+            show_roots();
+        }
+        else
+        {
+            quad = "The equation has two real roots";
+            r1 = -b + sqrt(b * b - 4 * a * constant) / (2 * a);
+            r2 = -b - sqrt(b * b - 4 * a * constant) / (2 * a);
+            show_roots();
+        }
+    }
 };
 
 int main()
@@ -29,5 +54,6 @@ int main()
     quadratic q1;
     q1.get_values();
     q1.show_eqn();
+    q1.roots();
     return 0;
 }
