@@ -6,6 +6,7 @@ class quadratic
 {
     int a, b, constant;
     int r1, r2;
+    int f1, f2;
     string quad;
 
     void show_roots()
@@ -30,7 +31,6 @@ public:
     }
     void factors()
     {
-        int f1, f2;
         for (int i = 1; i <= constant; i++)
         {
             for (int j = 2; j <= constant; j++)
