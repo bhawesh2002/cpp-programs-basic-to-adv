@@ -44,22 +44,29 @@ public:
         }
         cout << "Factors are : " << f1 << " and " << f2 << endl;
     }
+
+    void common()
+    {
+        int c1, c2;
+    }
     void roots()
     {
-        if ((b * b) - (4 * a * constant) < 0)
+        float d = (b * b) - (4 * a * constant);
+        cout << "The determinant is: " << d << endl;
+        if (d < 0)
             cout << "The equation has no real roots" << endl;
-        else if ((b * b) - (4 * a * constant) == 0)
+        else if (d == 0)
         {
             cout << "The equation has one real root" << endl;
-            /*r1 = -b + sqrt((b * b) - (4 * a * constant)) / (2 * a);
-            r2 = -b - sqrt((b * b) - (4 * a * constant)) / (2 * a);*/
+            r1 = (-b + sqrt(d)) / (2 * a);
+            r2 = (-b - sqrt(d)) / (2 * a);
             show_roots();
         }
-        else if ((b * b) - (4 * a * constant) > 0)
+        else if (d > 0)
         {
             cout << "The equation has two real roots" << endl;
-            /*r1 = -b + sqrt((b * b) - (4 * a * constant)) / (2 * a);
-            r2 = -b - sqrt((b * b) - (4 * a * constant)) / (2 * a);*/
+            r1 = (-b + sqrt(d)) / (2 * a);
+            r2 = (-b - sqrt(d)) / (2 * a);
             show_roots();
         }
     }
@@ -71,5 +78,6 @@ int main()
     q1.get_values();
     q1.show_eqn();
     q1.factors();
+    q1.roots();
     return 0;
 }
