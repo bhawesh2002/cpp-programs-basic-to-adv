@@ -28,6 +28,22 @@ public:
     {
         cout << "The equation is: " << a << "x^2 + " << b << "x + " << constant << endl;
     }
+    void factors()
+    {
+        int f1, f2;
+        for (int i = 1; i <= constant; i++)
+        {
+            for (int j = 2; j <= constant; j++)
+            {
+                if (i * j == constant)
+                {
+                    f1 = i;
+                    f2 = j;
+                }
+            }
+        }
+        cout << "Factors are : " << f1 << " and " << f2 << endl;
+    }
     void roots()
     {
         if ((b * b) - (4 * a * constant) < 0)
@@ -54,6 +70,6 @@ int main()
     quadratic q1;
     q1.get_values();
     q1.show_eqn();
-    q1.roots();
+    q1.factors();
     return 0;
 }
