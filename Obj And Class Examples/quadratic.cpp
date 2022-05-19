@@ -29,7 +29,7 @@ public:
     {
         cout << "The equation is: " << a << "x^2 + " << b << "x + " << constant << endl;
     }
-    void factors()
+    /*void factors()
     {
         for (int i = 1; i <= constant; i++)
         {
@@ -43,12 +43,7 @@ public:
             }
         }
         cout << "Factors are : " << f1 << " and " << f2 << endl;
-    }
-
-    void common()
-    {
-        int c1, c2;
-    }
+    }*/
     void roots()
     {
         float d = (b * b) - (4 * a * constant);
@@ -77,7 +72,6 @@ int main()
     quadratic q1;
     q1.get_values();
     q1.show_eqn();
-    q1.factors();
     q1.roots();
     return 0;
 }
