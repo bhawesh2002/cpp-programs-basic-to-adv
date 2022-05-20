@@ -47,6 +47,13 @@ int main()
         q.get_values();
         q.get_factors();
     }
+    break;
+    case 2:
+    {
+        factors q1, q2;
+        q1.get_values();
+        q2.get_values();
+    }
     }
     getche();
     return 0;
