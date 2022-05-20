@@ -38,5 +38,7 @@ int main()
     factors q;
     q.get_values();
     q.get_factors();
+    getche();
+
     return 0;
 }
