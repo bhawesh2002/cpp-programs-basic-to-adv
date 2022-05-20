@@ -34,8 +34,6 @@ public:
 
 int main()
 {
-    factors q;
-    q.get_values();
     cout << "ENTER YOUR CHOICE:\n"
          << "1)Get factors\n"
          << "2)Calculate the LCM" << endl;
@@ -45,6 +43,8 @@ int main()
     {
     case 1:
     {
+        factors q;
+        q.get_values();
         q.get_factors();
     }
     }
