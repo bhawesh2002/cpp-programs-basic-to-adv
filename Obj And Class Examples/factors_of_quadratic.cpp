@@ -6,15 +6,13 @@ using namespace std; // using the standard namespace
 
 class factors
 {
-    int a, b;
+    int a;
 
 public:
     void get_values()
     {
         cout << "Enter the value of a: ";
         cin >> a;
-        cout << "Enter the value of b: ";
-        cin >> b;
     }
 
     void get_factors()
@@ -39,6 +37,5 @@ int main()
     q.get_values();
     q.get_factors();
     getche();
-
     return 0;
 }
