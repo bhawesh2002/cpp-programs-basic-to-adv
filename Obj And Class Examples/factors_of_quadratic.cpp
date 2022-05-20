@@ -24,6 +24,21 @@ public:
     {
         cout << "The equation is: " << a << "x^2 + " << b << "x + " << constant << endl;
     }
+    void factors()
+    {
+        for (int i = 1; i <= constant; i++)
+        {
+            for(int j = 2; j <= constant; j++)
+            {
+                if(i * j == constant)
+                {
+                    f1 = i;
+                    f2 = j;
+                    cout << "(f1,f2)" << "(" << f1 << "," << f2 << ")" << endl;
+                }
+            }
+        }
+    }
 };
 
 int main()
@@ -31,5 +46,7 @@ int main()
     eqn q;
     q.get_values();
     q.show_eqn();
+    cout << "factors are: " << endl;
+    q.factors();
     return 0;
 }
