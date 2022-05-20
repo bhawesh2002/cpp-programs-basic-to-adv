@@ -7,7 +7,6 @@ using namespace std; // using the standard namespace
 class factors
 {
     int a, b;
-    int f1, f2;
 
 public:
     void get_values()
@@ -20,6 +19,17 @@ public:
 
     void get_factors()
     {
+        cout << "factors of " << a << " are:" << endl;
+        for (int i = 1; i <= a; i++)
+        {
+            for (int j = 1; j <= a; j++)
+            {
+                if (i * j == a)
+                {
+                    cout << "(" << i << "," << j << "),";
+                }
+            }
+        }
     }
 };
 
