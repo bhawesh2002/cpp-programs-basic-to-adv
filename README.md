@@ -45,3 +45,9 @@ Nothing much here. We just need to claculate the factorial of  numbers in denomi
 **8)User Operator**
 
 A new topic  **switch case** :- https://www.w3schools.com/cpp/cpp_switch.asp
+Switch Case is used to execute a block of code that the case parameter holdsIts syntax is switch(choice){
+case a:
+{statements}
+break;
+default:{statements}
+}
