@@ -37,7 +37,8 @@ int main()
 case_block:
     cout << "\nENTER YOUR CHOICE:\n"
          << "1)Get factors\n"
-         << "2)Calculate the LCM" << endl;
+         << "2)Get multiples\n"
+         << "3)Calculate the LCM" << endl;
     int choice;
     cin >> choice;
     {
@@ -52,9 +53,9 @@ case_block:
         break;
         case 2:
         {
-            factors q1, q2;
-            q1.get_values();
-            q2.get_values();
+        }
+        case 3:
+        {
         }
         default:
         {
