@@ -34,27 +34,39 @@ public:
 
 int main()
 {
-    cout << "ENTER YOUR CHOICE:\n"
+case_block:
+    cout << "\nENTER YOUR CHOICE:\n"
          << "1)Get factors\n"
          << "2)Calculate the LCM" << endl;
     int choice;
     cin >> choice;
-    switch (choice)
     {
-    case 1:
+        switch (choice)
+        {
+        case 1:
+        {
+            factors q;
+            q.get_values();
+            q.get_factors();
+        }
+        break;
+        case 2:
+        {
+            factors q1, q2;
+            q1.get_values();
+            q2.get_values();
+        }
+        default:
+        {
+            cout << "Invalid Input" << endl;
+        }
+        }
+    }
+    cout << "Do You Wnat to Restart The Program(Y/N):";
+    char y_n = getche();
+    if (y_n == 'y' || y_n == 'Y')
     {
-        factors q;
-        q.get_values();
-        q.get_factors();
+        goto case_block;
     }
-    break;
-    case 2:
-    {
-        factors q1, q2;
-        q1.get_values();
-        q2.get_values();
-    }
-    }
-    getche();
     return 0;
 }
