@@ -38,6 +38,7 @@ public:
         {
             cout << i * a << " ";
         }
+        std << endl;
     }
     void get_prime_factors()
     {
@@ -62,7 +63,7 @@ case_block:
          << "1)Get factors\n"
          << "2)Get Prime Factors\n"
          << "3)Get multiples\n"
-         << "4)Calculate the LCM" << endl;
+         << endl;
     int choice;
     cin >> choice;
     {
@@ -87,13 +88,6 @@ case_block:
             factors q;
             q.get_values();
             q.get_multiples();
-        }
-        break;
-        case 4:
-        {
-            factors q1, q2;
-            q1.get_values();
-            q2.get_values();
         }
         break;
         default:
