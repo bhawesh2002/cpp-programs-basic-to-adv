@@ -33,7 +33,11 @@ public:
 
     void get_multiples()
     {
-        
+        cout << "Here are the first 10 multiples of " << a << ": " << endl;
+        for (int i = 1; i <= 10; i++)
+        {
+            cout << i * a << " ";
+        }
     }
 };
 
