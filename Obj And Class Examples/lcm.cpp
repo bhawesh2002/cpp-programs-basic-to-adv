@@ -89,6 +89,13 @@ case_block:
             q.get_multiples();
         }
         break;
+        case 4:
+        {
+            factors q1, q2;
+            q1.get_values();
+            q2.get_values();
+        }
+        break;
         default:
         {
             cout << "Invalid Input" << endl;
