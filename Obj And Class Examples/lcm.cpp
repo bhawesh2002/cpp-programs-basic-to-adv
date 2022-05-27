@@ -30,6 +30,11 @@ public:
         }
         cout << endl;
     }
+
+    void get_multiples()
+    {
+        
+    }
 };
 
 int main()
