@@ -38,7 +38,7 @@ public:
         {
             cout << i * a << " ";
         }
-        std << endl;
+        cout << endl;
     }
     void get_prime_factors()
     {
