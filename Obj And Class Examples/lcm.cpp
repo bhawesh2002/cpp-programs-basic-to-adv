@@ -62,6 +62,9 @@ case_block:
         break;
         case 2:
         {
+            factors q;
+            q.get_values();
+            q.get_multiples();
         }
         case 3:
         {
