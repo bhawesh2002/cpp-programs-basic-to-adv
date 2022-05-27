@@ -46,8 +46,9 @@ int main()
 case_block:
     cout << "\nENTER YOUR CHOICE:\n"
          << "1)Get factors\n"
-         << "2)Get multiples\n"
-         << "3)Calculate the LCM" << endl;
+         << "2)Get Prime Factors\n"
+         << "3)Get multiples\n"
+         << "4)Calculate the LCM" << endl;
     int choice;
     cin >> choice;
     {
