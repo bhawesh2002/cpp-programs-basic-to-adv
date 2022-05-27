@@ -47,8 +47,11 @@ public:
             {
                 cout << i << " ";
                 a = (a / i);
+                i = 2;
             }
         }
+
+        cout << endl;
     }
 };
 
