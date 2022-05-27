@@ -39,6 +39,16 @@ public:
             cout << i * a << " ";
         }
     }
+    void get_prime_factors()
+    {
+        for (int i = 2; i <= a; i++)
+        {
+            if (a % i == 0)
+            {
+                cout << i << " ";
+            }
+        }
+    }
 };
 
 int main()
@@ -63,13 +73,13 @@ case_block:
         break;
         case 2:
         {
-            factors q;
-            q.get_values();
-            q.get_multiples();
         }
         break;
         case 3:
         {
+            factors q;
+            q.get_values();
+            q.get_multiples();
         }
         break;
         default:
