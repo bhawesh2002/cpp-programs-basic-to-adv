@@ -66,9 +66,11 @@ case_block:
             q.get_values();
             q.get_multiples();
         }
+        break;
         case 3:
         {
         }
+        break;
         default:
         {
             cout << "Invalid Input" << endl;
