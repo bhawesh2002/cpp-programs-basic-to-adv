@@ -46,6 +46,7 @@ public:
             if (a % i == 0)
             {
                 cout << i << " ";
+                a = (a / i);
             }
         }
     }
@@ -73,6 +74,9 @@ case_block:
         break;
         case 2:
         {
+            factors q;
+            q.get_values();
+            q.get_prime_factors();
         }
         break;
         case 3:
