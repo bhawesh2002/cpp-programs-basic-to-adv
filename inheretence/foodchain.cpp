@@ -58,6 +58,10 @@ int main()
     {
         cout << "Tiger" << endl;
     }
+    case 2:
+    {
+        cout << "Cow" << endl;
+    }
     break;
     default:
         break;
