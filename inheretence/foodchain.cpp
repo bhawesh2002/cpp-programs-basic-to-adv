@@ -9,6 +9,9 @@ Use inheritance concept where ever possible*/
 
 using namespace std;
 
+class forest
+{
+};
 int main()
 {
     return 0;
