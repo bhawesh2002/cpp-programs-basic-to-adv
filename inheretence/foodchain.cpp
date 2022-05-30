@@ -41,15 +41,16 @@ public:
             exit(0);
         }
     }
-    void show_type()
+    string show_type()
     {
         cout << "The animal is a " << type << endl;
+        return type;
     }
 };
 int main()
 {
     forest f1;
     f1.get_type();
-    f1.show_type();
+    string animat_type = f1.show_type();
     return 0;
 }
