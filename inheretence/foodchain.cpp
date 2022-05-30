@@ -52,6 +52,15 @@ int main()
     forest f1;
     f1.get_type();
     int animal_type = f1.show_type();
-    cout << animal_type << endl;
+    switch (animal_type)
+    {
+    case 1:
+    {
+        cout << "Tiger" << endl;
+    }
+    break;
+    default:
+        break;
+    }
     return 0;
 }
