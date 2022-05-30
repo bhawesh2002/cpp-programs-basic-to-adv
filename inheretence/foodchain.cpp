@@ -41,18 +41,16 @@ public:
             exit(0);
         }
     }
-    string show_type()
+    int show_type()
     {
         cout << "The animal is a " << type << endl;
-        return type;
+        return food_type;
     }
 };
 int main()
 {
     forest f1;
     f1.get_type();
-    string animal_type = f1.show_type();
-
-    cout << animal_type << endl;
+    int animal_type = f1.show_type();
     return 0;
 }
