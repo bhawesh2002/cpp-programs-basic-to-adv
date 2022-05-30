@@ -41,6 +41,10 @@ public:
             exit(0);
         }
     }
+    void show_type()
+    {
+        cout << "The animal is a " << type << endl;
+    }
 };
 int main()
 {
