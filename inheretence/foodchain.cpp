@@ -28,7 +28,7 @@ public:
         }
         else if (food_type == 2)
         {
-            type == "herbivore";
+            type = "herbivore";
         }
         else if (food_type == 3)
         {
@@ -52,6 +52,7 @@ int main()
     forest f1;
     f1.get_type();
     string animal_type = f1.show_type();
+
     cout << animal_type << endl;
     return 0;
 }
