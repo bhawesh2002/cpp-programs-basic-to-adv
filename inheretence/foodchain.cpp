@@ -11,6 +11,17 @@ using namespace std;
 
 class forest
 {
+    string type;
+    string food_type;
+
+public:
+    void get_type()
+    {
+        cout << "What does Animal eat?"
+             << "1)flesh"
+             << "2)plants"
+             << "3)both" << endl;
+    }
 };
 int main()
 {
