@@ -57,7 +57,7 @@ int main()
     case 1:
     {
         cout << "Tiger" << endl;
-    }
+    }break;
     case 2:
     {
         cout << "Cow" << endl;
