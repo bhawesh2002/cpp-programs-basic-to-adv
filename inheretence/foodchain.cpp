@@ -18,9 +18,9 @@ public:
     void get_type()
     {
         cout << "What does Animal eat?"
-             << "1)flesh"
-             << "2)plants"
-             << "3)both" << endl;
+             << "\n1)flesh"
+             << "\t2)plants"
+             << "\t3)both" << endl;
         cin >> food_type;
         if (food_type == 1)
         {
@@ -48,5 +48,8 @@ public:
 };
 int main()
 {
+    forest f1;
+    f1.get_type();
+    f1.show_type();
     return 0;
 }
