@@ -5,3 +5,11 @@ Then create a menu driven program which displays the food chains of the various 
 as per the ‘food chain’ hierarchy. An example of food chain of a ‘Wolf’ is given below.
 Use inheritance concept where ever possible*/
 
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    return 0;
+}
