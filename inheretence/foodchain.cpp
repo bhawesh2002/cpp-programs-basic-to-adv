@@ -12,7 +12,7 @@ using namespace std;
 class forest
 {
     string type;
-    string food_type;
+    int food_type;
 
 public:
     void get_type()
@@ -21,6 +21,25 @@ public:
              << "1)flesh"
              << "2)plants"
              << "3)both" << endl;
+        cin >> food_type;
+        if (food_type == 1)
+        {
+            type = "carnivore";
+        }
+        else if (food_type == 2)
+        {
+            type == "herbivore";
+        }
+        else if (food_type == 3)
+        {
+            type = "omnivore";
+        }
+        else
+        {
+            cout << "Invalid Input" << endl;
+            cout << "Terminating program" << endl;
+            exit(0);
+        }
     }
 };
 int main()
