@@ -94,7 +94,9 @@ int main()
     break;
     case 2:
     {
-        cout << "Cow" << endl;
+        herbivore h1;
+        cout << "List of some herbivores: " << endl;
+        h1.show_animal();
     }
     break;
     case 3:
