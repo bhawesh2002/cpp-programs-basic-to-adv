@@ -58,6 +58,7 @@ class herbivore : private forest
 };
 class omnivore : private forest
 {
+    string animal[7] = {"Bears", "Pigs", "Squrrials", "Chipmunks", "Sloths", "Rats", "Hamsters"};
 };
 int main()
 {
