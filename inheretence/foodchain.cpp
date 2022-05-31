@@ -77,6 +77,15 @@ public:
 class omnivore : private forest
 {
     string animal[7] = {"Bears", "Pigs", "Squrrials", "Chipmunks", "Sloths", "Rats", "Hamsters"};
+
+public:
+    void show_animal()
+    {
+        for (int i = 0; i < sizeof(animal) / sizeof(string); i++)
+        {
+            cout << animal[i] << "  ";
+        }
+    }
 };
 int main()
 {
