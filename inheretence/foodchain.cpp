@@ -14,7 +14,7 @@ class forest
     string type;
     int food_type;
 
-public:
+protected:
     void get_type()
     {
         cout << "What does Animal eat?"
@@ -41,6 +41,8 @@ public:
             exit(0);
         }
     }
+
+public:
     int show_type()
     {
         cout << "The animal is a " << type << endl;
