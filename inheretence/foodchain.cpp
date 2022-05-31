@@ -56,6 +56,9 @@ class herbivore : private forest
 {
     string animal[6] = {"Deer", "Elephant", "Giraffe", "Bison", "Antelope", "Monkeys"};
 };
+class omnivore : private forest
+{
+};
 int main()
 {
     forest f1;
