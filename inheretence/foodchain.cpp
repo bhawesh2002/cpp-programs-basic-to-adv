@@ -57,7 +57,7 @@ public:
     {
         for (int i = 0; i < sizeof(animal) / sizeof(string); i++)
         {
-            cout << animal[i] << "  "s;
+            cout << animal[i] << "  ";
         }
     }
 };
