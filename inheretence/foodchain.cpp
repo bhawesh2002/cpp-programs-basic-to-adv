@@ -79,6 +79,7 @@ int main()
     case 1:
     {
         carnivore c1;
+        cout << "List of some carnivores: " << endl;
         c1.show_animal();
     }
     break;
