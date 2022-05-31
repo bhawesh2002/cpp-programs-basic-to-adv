@@ -18,7 +18,7 @@ public:
     void get_type()
     {
         cout << "What does Animal eat?"
-             << "\n1)flesh"
+             << "\n1)flesh "
              << "\t2)plants"
              << "\t3)both" << endl;
         cin >> food_type;
