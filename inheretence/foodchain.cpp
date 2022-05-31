@@ -78,7 +78,8 @@ int main()
     {
     case 1:
     {
-        cout << "Tiger" << endl;
+        carnivore c1;
+        c1.show_animal();
     }
     break;
     case 2:
