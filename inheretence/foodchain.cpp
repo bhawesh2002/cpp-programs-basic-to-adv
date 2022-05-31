@@ -110,7 +110,9 @@ int main()
     break;
     case 3:
     {
-        cout << "Humans" << endl;
+        omnivore o1;
+        cout << "List of some omnivores: " << endl;
+        o1.show_animal();
     }
     break;
     default:
