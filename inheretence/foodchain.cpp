@@ -51,6 +51,15 @@ public:
 class carnivore : private forest
 {
     string animal[8] = {"Lion", "Tiger", "Heyna", "Wolf", "Panther", "Snake", "Eagle", "Grizzly"};
+
+public:
+    void show_animal()
+    {
+        for (int i = 0; i < sizeof(animal) / sizeof(string); i++)
+        {
+            cout << animal[i] << "  "s;
+        }
+    }
 };
 class herbivore : private forest
 {
