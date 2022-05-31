@@ -50,7 +50,10 @@ public:
 
 class carnivore : private forest
 {
-    string animal[6] = {"Lion", "Tiger", "Heyna", "Wolf", "Panther", "Snake"};
+    string animal[8] = {"Lion", "Tiger", "Heyna", "Wolf", "Panther", "Snake", "Eagle", "Grizzly"};
+};
+class herbivore : private forest
+{
 };
 int main()
 {
