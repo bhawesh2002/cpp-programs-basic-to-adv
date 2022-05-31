@@ -47,6 +47,10 @@ public:
         return food_type;
     }
 };
+
+class carnivore : private forest
+{
+};
 int main()
 {
     forest f1;
