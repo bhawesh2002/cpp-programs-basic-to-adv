@@ -64,6 +64,13 @@ public:
 class herbivore : private forest
 {
     string animal[6] = {"Deer", "Elephant", "Giraffe", "Bison", "Antelope", "Monkeys"};
+    void show_animal(){
+        for (int i = 0; i < sizeof(animal)/sizeof(string); i++)
+        {
+            cout << animal[i] << "  " << endl;
+        }
+        
+    }
 };
 class omnivore : private forest
 {
