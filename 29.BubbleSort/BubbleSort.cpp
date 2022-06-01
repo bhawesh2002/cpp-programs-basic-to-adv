@@ -8,7 +8,7 @@ int main()
 
     for (int i = 0; i < sizeof(num) / sizeof(int); i++)
     {
-        for (int j = 0; j < (sizeof(num) / sizeof(int))-1; j++)
+        for (int j = 0; j < (sizeof(num) / sizeof(int)) - 1; j++)
         {
             if (num[j] < num[i])
             {
@@ -16,7 +16,10 @@ int main()
             }
         }
     }
-
+    int choice;
+    cout << "1)sort in ascending\n"
+         << "2)sort in descending\n";
+    cin >> choice;
     cout << "The sorted array is:-\n";
     for (int i = 0; i < sizeof(num) / sizeof(int); i++)
     {
