@@ -22,5 +22,11 @@ int main()
             }
         }
     }
+
+    cout << "The sorted array is:-\n";
+    for (int i = 0; i < sizeof(num) / sizeof(int); i++)
+    {
+        cout << num[i] << endl;
+    }
     return 0;
 }
