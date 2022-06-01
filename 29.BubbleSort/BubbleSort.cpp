@@ -4,19 +4,13 @@ using namespace std;
 
 int main()
 {
-    int num[5] = {0};
-    cout << "Enter numbers to fill the array:-\n";
-    for (int i = 0; i < sizeof(num) / sizeof(int); i++)
-    {
-        cout << "Enter the " << i + 1 << " element: ";
-        cin >> num[i];
-    }
+    int num[5] = {95,52,887,68,123};
 
     for (int i = 0; i < sizeof(num) / sizeof(num); i++)
     {
-        for (int j = 1; j < (sizeof(num) / sizeof(num)) - 1; j++)
+        for (int j = 1; j < (sizeof(num) / sizeof(num)); j++)
         {
-            if (num[i] > num[j])
+            if (num[j] > num[i])
             {
                 swap(num[i], num[j]);
             }
