@@ -8,9 +8,9 @@ int main()
 
     for (int i = 0; i < sizeof(num) / sizeof(int); i++)
     {
-        for (int j = 1; j < (sizeof(num) / sizeof(int))-1; j++)
+        for (int j = 0; j < (sizeof(num) / sizeof(int))-1; j++)
         {
-            if (num[j] < num[i])
+            if (num[j] > num[i])
             {
                 swap(num[i], num[j]);
             }
