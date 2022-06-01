@@ -6,16 +6,21 @@ int main()
 {
     int num[5] = {95, 52, 887, 68, 123};
 
-    for (int i = 0; i < sizeof(num) / sizeof(num); i++)
+    for (int i = 0; i < sizeof(num) / sizeof(int); i++)
     {
-        for (int j = 1; j < (sizeof(num) / sizeof(num)); j++)
+        for (int j = 1; j < (sizeof(num) / sizeof(int))-1; j++)
         {
             if (num[j] < num[i])
             {
                 swap(num[i], num[j]);
-                cout << num[i] << endl;
             }
         }
+    }
+
+    cout << "The sorted array is:-\n";
+    for (int i = 0; i < sizeof(num) / sizeof(int); i++)
+    {
+        cout << num[i] << endl;
     }
     return 0;
 }
