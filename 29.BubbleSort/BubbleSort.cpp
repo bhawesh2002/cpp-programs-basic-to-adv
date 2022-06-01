@@ -10,7 +10,7 @@ int main()
     {
         for (int j = 0; j < (sizeof(num) / sizeof(int))-1; j++)
         {
-            if (num[j] > num[i])
+            if (num[j] < num[i])
             {
                 swap(num[i], num[j]);
             }
