@@ -11,8 +11,6 @@ int main()
         cout << "Enter the " << i + 1 << " element: ";
         cin >> num[i];
     }
-    swap(num[0], num[1]);
-
     cout << "The numbers entered are:-\n";
     for (int i = 0; i < sizeof(num) / sizeof(int); i++)
     {
