@@ -8,7 +8,7 @@ int main()
     cout << "Enter numbers to fill the array:-\n";
     for (int i = 0; i < sizeof(num) / sizeof(int); i++)
     {
-        cout << "Enter the " << i + 1 << "element: ";
+        cout << "Enter the " << i + 1 << " element: ";
         cin >> num[i];
     }
     return 0;
