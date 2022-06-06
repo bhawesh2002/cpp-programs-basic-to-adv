@@ -53,4 +53,9 @@ default:{statements}
 }
 
 **9)Months and Numbers**
+
 Use of Switch case to print name of months based on user input
+
+**10)Largest of Three**
+
+use of comparision operators to compute the largest amongst three entered numbers
