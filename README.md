@@ -58,4 +58,10 @@ Use of Switch case to print name of months based on user input
 
 **10)Largest of Three**
 
-use of comparision operators to compute the largest amongst three entered numbers
+Use of comparision operators to compute the largest amongst three entered numbers
+
+**11)Palindrome**
+
+Palindrome numbers are those numbers which look same from left and right : https://en.wikipedia.org/wiki/Palindromic_number
+
+A cpp program to check if a number is palindrome or not
