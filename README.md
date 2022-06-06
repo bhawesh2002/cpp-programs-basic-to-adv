@@ -51,3 +51,6 @@ case a:
 break;
 default:{statements}
 }
+
+**9)Months and Numbers**
+Use of Switch case to print name of months based on user input
