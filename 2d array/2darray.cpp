@@ -20,7 +20,8 @@ int main()
 
 			// Assign values to
 			// the memory block
-			*(arr + i * n + j) = ++c;
+			*(arr + i * n + j) = c;
+			cin >> c;
 		}
 	}
 
