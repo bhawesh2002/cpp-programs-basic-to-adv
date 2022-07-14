@@ -8,7 +8,11 @@ using namespace std;
 int main()
 {
 	// Dimensions of the 2D array
-	int m = 3, n = 4, c = 0;
+	int m = 0, n = 0, c = 0;
+	cout << "Enter the no of rows  in array: ";
+	cin >> m;
+	cout << "Enter the no of columns  in array: ";
+	cin >> n;
 
 	// Declare a memory block of
 	// size m*n
